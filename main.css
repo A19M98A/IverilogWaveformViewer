@@ -1,0 +1,65 @@
+#app-grid {
+    layout: grid;
+    grid-size: 2;
+    grid-rows: 1fr 2fr;
+    grid-gutter: 1;
+}
+
+FileBrowser, #signal-list-container {
+    height: 100%;
+    border: heavy blue;
+    overflow-y: auto;
+}
+
+WaveformDisplay {
+    column-span: 2;
+    height: 100%;
+}
+
+#header-container {
+    height: 1;
+}
+
+#timeline-spacer {
+    width: 45; /* 30 (names) + 15 (values) */
+    height: 1;
+}
+
+#timeline-pane {
+    width: 1fr;
+    height: 1;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#data-container {
+    height: 1fr;
+}
+
+#names-pane {
+    width: 30;
+    border: round dodgerblue;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#values-pane {
+    width: 15;
+    border: round dodgerblue;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#wave-pane {
+    width: 1fr;
+    border: round dodgerblue;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+#cursor {
+    display: none;
+    layer: overlay;
+    height: 100%;
+    width: 1;
+}
